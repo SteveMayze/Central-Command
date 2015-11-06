@@ -1,4 +1,4 @@
-update=Mon 02 Nov 2015 01:41:22 AM CET
+update=Fri 06 Nov 2015 06:39:11 AM PST
 version=1
 last_client=kicad
 [pcbnew]
@@ -25,7 +25,7 @@ version=1
 NetIExt=net
 [eeschema]
 version=1
-LibDir=lib
+LibDir=lib;/home/vagrant/kicad-lib
 [eeschema/libraries]
 LibName1=power
 LibName2=device

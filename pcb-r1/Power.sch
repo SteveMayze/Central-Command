@@ -1,0 +1,286 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:central-command-symbols
+LIBS:Central-Command-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCP1700T-3302E U?
+U 1 1 5657EDBA
+P 5350 3150
+F 0 "U?" H 5850 2800 60  0000 C CNN
+F 1 "MCP1700T-3302E" H 5350 3200 60  0000 C CNN
+F 2 "Housings_SOT-23_SOT-143_TSOT-6:SOT-23" H 5250 3300 60  0001 C CNN
+F 3 "" H 5250 3300 60  0000 C CNN
+F 4 "http://parts.io/detail/1370896/MCP1700T-3302E%2FTT" H 5350 3150 60  0001 C CNN "link"
+	1    5350 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C3
+U 1 1 5657EDC1
+P 6400 3250
+F 0 "C3" H 6425 3350 50  0000 L CNN
+F 1 "1μF" H 6425 3150 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 6438 3100 30  0001 C CNN
+F 3 "" H 6400 3250 60  0000 C CNN
+	1    6400 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C1
+U 1 1 5657EDC8
+P 4500 3300
+F 0 "C1" H 4525 3400 50  0000 L CNN
+F 1 "1μF" H 4525 3200 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 4538 3150 30  0001 C CNN
+F 3 "" H 4500 3300 60  0000 C CNN
+	1    4500 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5657EDD1
+P 5100 4050
+F 0 "#PWR?" H 5100 3800 50  0001 C CNN
+F 1 "GND" H 5100 3900 50  0000 C CNN
+F 2 "" H 5100 4050 60  0000 C CNN
+F 3 "" H 5100 4050 60  0000 C CNN
+	1    5100 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 2950 6650 2950
+Wire Wire Line
+	6400 2950 6400 3100
+Connection ~ 6400 2950
+Wire Wire Line
+	4500 2950 4500 3150
+Connection ~ 4500 2950
+Wire Wire Line
+	4500 3450 4500 3800
+Wire Wire Line
+	6400 3800 6400 3400
+Wire Wire Line
+	4500 3800 6400 3800
+Wire Wire Line
+	5350 3600 5350 3800
+Connection ~ 5350 3800
+Wire Wire Line
+	5100 4050 5100 3800
+Connection ~ 5100 3800
+$Comp
+L CONN_01X02 P?
+U 1 1 5657F36A
+P 3300 3000
+F 0 "P?" H 3300 3150 50  0000 C CNN
+F 1 "CONN_01X02" V 3400 3000 50  0000 C CNN
+F 2 "" H 3300 3000 60  0000 C CNN
+F 3 "" H 3300 3000 60  0000 C CNN
+	1    3300 3000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5657F45C
+P 3600 3350
+F 0 "#PWR?" H 3600 3100 50  0001 C CNN
+F 1 "GND" H 3600 3200 50  0000 C CNN
+F 2 "" H 3600 3350 60  0000 C CNN
+F 3 "" H 3600 3350 60  0000 C CNN
+	1    3600 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 3050 3600 3050
+Wire Wire Line
+	3600 3050 3600 3350
+$Comp
+L FT232RQ U?
+U 1 1 56580D9A
+P 5100 5400
+F 0 "U?" H 5100 5350 60  0000 C CNN
+F 1 "FT232RQ" H 5100 5500 60  0000 C CNN
+F 2 "" H 4800 6000 60  0000 C CNN
+F 3 "" H 4800 6000 60  0000 C CNN
+	1    5100 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L USB-MICRO-B CON?
+U 1 1 56581270
+P 2650 4700
+F 0 "CON?" H 2350 5050 50  0000 C CNN
+F 1 "USB-MICRO-B" H 2500 4350 50  0000 C CNN
+F 2 "" H 2650 4600 50  0000 C CNN
+F 3 "" H 2650 4600 50  0000 C CNN
+	1    2650 4700
+	-1   0    0    -1  
+$EndComp
+$Comp
+L INDUCTOR_SMALL L?
+U 1 1 565814AE
+P 3800 4500
+F 0 "L?" H 3800 4600 50  0000 C CNN
+F 1 "FERRITE" H 3800 4450 50  0000 C CNN
+F 2 "" H 3800 4500 60  0000 C CNN
+F 3 "" H 3800 4500 60  0000 C CNN
+	1    3800 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 4500 4350 4500
+Wire Wire Line
+	4200 4500 4200 4650
+Wire Wire Line
+	4200 4650 4350 4650
+Connection ~ 4200 4500
+Wire Wire Line
+	3150 4500 3550 4500
+$Comp
+L C C?
+U 1 1 5658172B
+P 3450 5300
+F 0 "C?" H 3475 5400 50  0000 L CNN
+F 1 "C" H 3475 5200 50  0000 L CNN
+F 2 "" H 3488 5150 30  0000 C CNN
+F 3 "" H 3450 5300 60  0000 C CNN
+	1    3450 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 4500 3450 5150
+Connection ~ 3450 4500
+$Comp
+L GND #PWR?
+U 1 1 565817D5
+P 3200 5600
+F 0 "#PWR?" H 3200 5350 50  0001 C CNN
+F 1 "GND" H 3200 5450 50  0000 C CNN
+F 2 "" H 3200 5600 60  0000 C CNN
+F 3 "" H 3200 5600 60  0000 C CNN
+	1    3200 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 4900 3200 4900
+Wire Wire Line
+	3200 4900 3200 5600
+Wire Wire Line
+	2150 4500 1950 4500
+Wire Wire Line
+	1950 4500 1950 5550
+Wire Wire Line
+	1950 5550 3200 5550
+Connection ~ 3200 5550
+Wire Wire Line
+	2150 4600 1950 4600
+Connection ~ 1950 4600
+Wire Wire Line
+	2150 4800 1950 4800
+Connection ~ 1950 4800
+Wire Wire Line
+	2150 4900 1950 4900
+Connection ~ 1950 4900
+Wire Wire Line
+	3150 4600 3350 4600
+Wire Wire Line
+	3350 4600 3350 4800
+Wire Wire Line
+	3350 4800 4350 4800
+Wire Wire Line
+	3150 4700 3300 4700
+Wire Wire Line
+	3300 4700 3300 4950
+Wire Wire Line
+	3300 4950 4350 4950
+Wire Wire Line
+	3450 5450 3450 5500
+Wire Wire Line
+	3450 5500 3200 5500
+Connection ~ 3200 5500
+Text HLabel 6100 4500 2    60   Input ~ 0
+TXD
+Text HLabel 6100 4650 2    60   Input ~ 0
+RXD
+Wire Wire Line
+	6100 4500 5850 4500
+Wire Wire Line
+	5850 4650 6100 4650
+Wire Wire Line
+	4100 4300 4100 4500
+Connection ~ 4100 4500
+Wire Wire Line
+	4100 4000 4100 2950
+Connection ~ 4100 2950
+Text Notes 1000 3950 0    60   ~ 0
+Schotky  allows the unit to be powered \nand the USB plugged in.\nor it can be powered by USB only.\nUSB has a lower priority
+$Comp
+L D_Schottky D?
+U 1 1 56582027
+P 3800 2950
+F 0 "D?" H 3800 3050 50  0000 C CNN
+F 1 "D_Schottky" H 3800 2850 50  0000 C CNN
+F 2 "" H 3800 2950 60  0000 C CNN
+F 3 "" H 3800 2950 60  0000 C CNN
+	1    3800 2950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3500 2950 3650 2950
+Wire Wire Line
+	3950 2950 4600 2950
+$Comp
+L D_Schottky D?
+U 1 1 5658236A
+P 4100 4150
+F 0 "D?" H 4100 4250 50  0000 C CNN
+F 1 "D_Schottky" H 4100 4050 50  0000 C CNN
+F 2 "" H 4100 4150 60  0000 C CNN
+F 3 "" H 4100 4150 60  0000 C CNN
+	1    4100 4150
+	0    1    1    0   
+$EndComp
+Text HLabel 6650 2950 2    60   Input ~ 0
+3V3
+$EndSCHEMATC

@@ -61,7 +61,7 @@ L C C3
 U 1 1 5657EDC1
 P 6400 3250
 F 0 "C3" H 6425 3350 50  0000 L CNN
-F 1 "1μF" H 6425 3150 50  0000 L CNN
+F 1 "10μF" H 6425 3150 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0805" H 6438 3100 30  0001 C CNN
 F 3 "" H 6400 3250 60  0000 C CNN
 	1    6400 3250
@@ -72,7 +72,7 @@ L C C1
 U 1 1 5657EDC8
 P 4500 3300
 F 0 "C1" H 4525 3400 50  0000 L CNN
-F 1 "1μF" H 4525 3200 50  0000 L CNN
+F 1 "10μF" H 4525 3200 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0805" H 4538 3150 30  0001 C CNN
 F 3 "" H 4500 3300 60  0000 C CNN
 	1    4500 3300
@@ -89,26 +89,6 @@ F 3 "" H 5100 4050 60  0000 C CNN
 	1    5100 4050
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6100 2950 6650 2950
-Wire Wire Line
-	6400 2950 6400 3100
-Connection ~ 6400 2950
-Wire Wire Line
-	4500 2950 4500 3150
-Connection ~ 4500 2950
-Wire Wire Line
-	4500 3450 4500 3800
-Wire Wire Line
-	6400 3800 6400 3400
-Wire Wire Line
-	4500 3800 6400 3800
-Wire Wire Line
-	5350 3600 5350 3800
-Connection ~ 5350 3800
-Wire Wire Line
-	5100 4050 5100 3800
-Connection ~ 5100 3800
 $Comp
 L CONN_01X02 P?
 U 1 1 5657F36A
@@ -131,19 +111,15 @@ F 3 "" H 3600 3350 60  0000 C CNN
 	1    3600 3350
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3500 3050 3600 3050
-Wire Wire Line
-	3600 3050 3600 3350
 $Comp
 L FT232RQ U?
 U 1 1 56580D9A
-P 5100 5400
-F 0 "U?" H 5100 5350 60  0000 C CNN
-F 1 "FT232RQ" H 5100 5500 60  0000 C CNN
-F 2 "" H 4800 6000 60  0000 C CNN
-F 3 "" H 4800 6000 60  0000 C CNN
-	1    5100 5400
+P 5950 5400
+F 0 "U?" H 5950 5350 60  0000 C CNN
+F 1 "FT232RQ" H 5950 5500 60  0000 C CNN
+F 2 "" H 5650 6000 60  0000 C CNN
+F 3 "http://www.ftdichip.com/Support/Documents/DataSheets/ICs/DS_FT232R.pdf" H 5650 6000 60  0001 C CNN
+	1    5950 5400
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -168,29 +144,17 @@ F 3 "" H 3800 4500 60  0000 C CNN
 	1    3800 4500
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4050 4500 4350 4500
-Wire Wire Line
-	4200 4500 4200 4650
-Wire Wire Line
-	4200 4650 4350 4650
-Connection ~ 4200 4500
-Wire Wire Line
-	3150 4500 3550 4500
 $Comp
 L C C?
 U 1 1 5658172B
-P 3450 5300
-F 0 "C?" H 3475 5400 50  0000 L CNN
-F 1 "C" H 3475 5200 50  0000 L CNN
-F 2 "" H 3488 5150 30  0000 C CNN
-F 3 "" H 3450 5300 60  0000 C CNN
-	1    3450 5300
+P 3450 5200
+F 0 "C?" H 3475 5300 50  0000 L CNN
+F 1 "0.01μF" H 3475 5100 50  0000 L CNN
+F 2 "" H 3488 5050 30  0000 C CNN
+F 3 "" H 3450 5200 60  0000 C CNN
+	1    3450 5200
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3450 4500 3450 5150
-Connection ~ 3450 4500
 $Comp
 L GND #PWR?
 U 1 1 565817D5
@@ -202,6 +166,186 @@ F 3 "" H 3200 5600 60  0000 C CNN
 	1    3200 5600
 	1    0    0    -1  
 $EndComp
+Text HLabel 7600 4500 2    60   Input ~ 0
+TXD
+Text HLabel 7600 4650 2    60   Input ~ 0
+RXD
+Text Notes 1000 3950 0    60   ~ 0
+Schotky  allows the unit to be powered \nand the USB plugged in.\nor it can be powered by USB only.\nUSB has a lower priority
+$Comp
+L D_Schottky D?
+U 1 1 56582027
+P 3800 2950
+F 0 "D?" H 3800 3050 50  0000 C CNN
+F 1 "D_Schottky" H 3800 2850 50  0000 C CNN
+F 2 "" H 3800 2950 60  0000 C CNN
+F 3 "" H 3800 2950 60  0000 C CNN
+	1    3800 2950
+	-1   0    0    1   
+$EndComp
+$Comp
+L D_Schottky D?
+U 1 1 5658236A
+P 4100 4150
+F 0 "D?" H 4100 4250 50  0000 C CNN
+F 1 "D_Schottky" H 4100 4050 50  0000 C CNN
+F 2 "" H 4100 4150 60  0000 C CNN
+F 3 "" H 4100 4150 60  0000 C CNN
+	1    4100 4150
+	0    1    1    0   
+$EndComp
+Text HLabel 6650 2950 2    60   Input ~ 0
+3V3
+$Comp
+L C C?
+U 1 1 5659E1E5
+P 4050 6650
+F 0 "C?" H 4075 6750 50  0000 L CNN
+F 1 "0.1μF" H 4075 6550 50  0000 L CNN
+F 2 "" H 4088 6500 30  0000 C CNN
+F 3 "" H 4050 6650 60  0000 C CNN
+	1    4050 6650
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5659E264
+P 4400 6650
+F 0 "C?" H 4425 6750 50  0000 L CNN
+F 1 "4.7μF" H 4425 6550 50  0000 L CNN
+F 2 "" H 4438 6500 30  0000 C CNN
+F 3 "" H 4400 6650 60  0000 C CNN
+	1    4400 6650
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5659E477
+P 4250 7250
+F 0 "#PWR?" H 4250 7000 50  0001 C CNN
+F 1 "GND" H 4250 7100 50  0000 C CNN
+F 2 "" H 4250 7250 60  0000 C CNN
+F 3 "" H 4250 7250 60  0000 C CNN
+	1    4250 7250
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5659E54F
+P 4900 6650
+F 0 "C?" H 4925 6750 50  0000 L CNN
+F 1 "0.1μF" H 4925 6550 50  0000 L CNN
+F 2 "" H 4938 6500 30  0000 C CNN
+F 3 "" H 4900 6650 60  0000 C CNN
+	1    4900 6650
+	1    0    0    -1  
+$EndComp
+Text GLabel 4700 5800 0    60   Input ~ 0
+NRST
+$Comp
+L R R?
+U 1 1 5659F2A3
+P 4950 5800
+F 0 "R?" V 5030 5800 50  0000 C CNN
+F 1 "0Ω" V 4950 5800 50  0000 C CNN
+F 2 "" V 4880 5800 30  0000 C CNN
+F 3 "" H 4950 5800 30  0000 C CNN
+	1    4950 5800
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5659F562
+P 5550 7150
+F 0 "#PWR?" H 5550 6900 50  0001 C CNN
+F 1 "GND" H 5550 7000 50  0000 C CNN
+F 2 "" H 5550 7150 60  0000 C CNN
+F 3 "" H 5550 7150 60  0000 C CNN
+	1    5550 7150
+	1    0    0    -1  
+$EndComp
+Text Notes 6700 3300 0    60   ~ 0
+Chris changed this from \n1uF to 10uF
+$Comp
+L R R?
+U 1 1 5659FF04
+P 8200 4900
+F 0 "R?" V 8280 4900 50  0000 C CNN
+F 1 "270Ω" V 8200 4900 50  0000 C CNN
+F 2 "" V 8130 4900 30  0000 C CNN
+F 3 "" H 8200 4900 30  0000 C CNN
+	1    8200 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D?
+U 1 1 5659FF75
+P 8200 5400
+F 0 "D?" H 8200 5500 50  0000 C CNN
+F 1 "LED" H 8200 5300 50  0000 C CNN
+F 2 "" H 8200 5400 60  0000 C CNN
+F 3 "" H 8200 5400 60  0000 C CNN
+	1    8200 5400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R?
+U 1 1 565A007A
+P 8650 4900
+F 0 "R?" V 8730 4900 50  0000 C CNN
+F 1 "270Ω" V 8650 4900 50  0000 C CNN
+F 2 "" V 8580 4900 30  0000 C CNN
+F 3 "" H 8650 4900 30  0000 C CNN
+	1    8650 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D?
+U 1 1 565A0080
+P 8650 5400
+F 0 "D?" H 8650 5500 50  0000 C CNN
+F 1 "LED" H 8650 5300 50  0000 C CNN
+F 2 "" H 8650 5400 60  0000 C CNN
+F 3 "" H 8650 5400 60  0000 C CNN
+	1    8650 5400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6100 2950 6650 2950
+Wire Wire Line
+	6400 2950 6400 3100
+Connection ~ 6400 2950
+Wire Wire Line
+	4500 2950 4500 3150
+Connection ~ 4500 2950
+Wire Wire Line
+	4500 3450 4500 3800
+Wire Wire Line
+	6400 3800 6400 3400
+Wire Wire Line
+	4500 3800 6400 3800
+Wire Wire Line
+	5350 3600 5350 3800
+Connection ~ 5350 3800
+Wire Wire Line
+	5100 4050 5100 3800
+Connection ~ 5100 3800
+Wire Wire Line
+	3500 3050 3600 3050
+Wire Wire Line
+	3600 3050 3600 3350
+Wire Wire Line
+	4050 4500 5200 4500
+Wire Wire Line
+	5050 4500 5050 4650
+Wire Wire Line
+	5050 4650 5200 4650
+Connection ~ 5050 4500
+Wire Wire Line
+	3150 4500 3550 4500
+Wire Wire Line
+	3450 4500 3450 5050
+Connection ~ 3450 4500
 Wire Wire Line
 	3150 4900 3200 4900
 Wire Wire Line
@@ -227,60 +371,173 @@ Wire Wire Line
 Wire Wire Line
 	3350 4600 3350 4800
 Wire Wire Line
-	3350 4800 4350 4800
+	3350 4800 5200 4800
 Wire Wire Line
 	3150 4700 3300 4700
 Wire Wire Line
 	3300 4700 3300 4950
 Wire Wire Line
-	3300 4950 4350 4950
+	3300 4950 5200 4950
 Wire Wire Line
-	3450 5450 3450 5500
+	3450 5350 3450 5400
 Wire Wire Line
-	3450 5500 3200 5500
-Connection ~ 3200 5500
-Text HLabel 6100 4500 2    60   Input ~ 0
-TXD
-Text HLabel 6100 4650 2    60   Input ~ 0
-RXD
+	3450 5400 3200 5400
+Connection ~ 3200 5400
 Wire Wire Line
-	6100 4500 5850 4500
+	7150 4500 7600 4500
 Wire Wire Line
-	5850 4650 6100 4650
+	7150 4650 7600 4650
 Wire Wire Line
 	4100 4300 4100 4500
 Connection ~ 4100 4500
 Wire Wire Line
 	4100 4000 4100 2950
 Connection ~ 4100 2950
-Text Notes 1000 3950 0    60   ~ 0
-Schotky  allows the unit to be powered \nand the USB plugged in.\nor it can be powered by USB only.\nUSB has a lower priority
-$Comp
-L D_Schottky D?
-U 1 1 56582027
-P 3800 2950
-F 0 "D?" H 3800 3050 50  0000 C CNN
-F 1 "D_Schottky" H 3800 2850 50  0000 C CNN
-F 2 "" H 3800 2950 60  0000 C CNN
-F 3 "" H 3800 2950 60  0000 C CNN
-	1    3800 2950
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	3500 2950 3650 2950
 Wire Wire Line
 	3950 2950 4600 2950
+Wire Wire Line
+	4050 6050 4050 6500
+Wire Wire Line
+	4050 6050 4400 6050
+Wire Wire Line
+	4400 6050 4400 6500
+Wire Wire Line
+	4050 6800 4050 7000
+Wire Wire Line
+	4050 7000 4900 7000
+Wire Wire Line
+	4400 7000 4400 6800
+Wire Wire Line
+	4250 7250 4250 7000
+Connection ~ 4250 7000
+Connection ~ 4250 6050
+Wire Wire Line
+	4250 6050 4250 4500
+Connection ~ 4250 4500
+Wire Wire Line
+	5200 6400 4900 6400
+Wire Wire Line
+	4900 6400 4900 6500
+Wire Wire Line
+	4900 7000 4900 6800
+Connection ~ 4400 6350
+Connection ~ 4400 7000
+Wire Wire Line
+	4700 5800 4800 5800
+Wire Wire Line
+	5100 5800 5200 5800
+Wire Wire Line
+	5550 6900 5550 7150
+Wire Wire Line
+	5550 7000 6350 7000
+Wire Wire Line
+	6350 7000 6350 6900
+Wire Wire Line
+	6150 6900 6150 7000
+Connection ~ 6150 7000
+Wire Wire Line
+	5950 6900 5950 7000
+Connection ~ 5950 7000
+Wire Wire Line
+	5750 6900 5750 7000
+Connection ~ 5750 7000
+Connection ~ 5550 7000
+Wire Wire Line
+	8200 5050 8200 5200
+Wire Wire Line
+	8650 5050 8650 5200
+Wire Wire Line
+	8200 5600 8200 5700
+Wire Wire Line
+	8200 5700 6700 5700
+Wire Wire Line
+	8650 5600 8650 5850
+Wire Wire Line
+	8650 5850 6700 5850
+Wire Wire Line
+	8200 4750 8200 4550
+Wire Wire Line
+	8200 4550 8650 4550
+Wire Wire Line
+	8650 4550 8650 4750
+Wire Wire Line
+	5150 4500 5150 4300
+Wire Wire Line
+	5150 4300 8450 4300
+Wire Wire Line
+	8450 4300 8450 4550
+Connection ~ 8450 4550
+Connection ~ 5150 4500
 $Comp
-L D_Schottky D?
-U 1 1 5658236A
-P 4100 4150
-F 0 "D?" H 4100 4250 50  0000 C CNN
-F 1 "D_Schottky" H 4100 4050 50  0000 C CNN
-F 2 "" H 4100 4150 60  0000 C CNN
-F 3 "" H 4100 4150 60  0000 C CNN
-	1    4100 4150
+L R R?
+U 1 1 565A06AA
+P 7000 4800
+F 0 "R?" V 7080 4800 50  0000 C CNN
+F 1 "NOPE" V 7000 4800 50  0000 C CNN
+F 2 "" V 6930 4800 30  0000 C CNN
+F 3 "" H 7000 4800 30  0000 C CNN
+	1    7000 4800
 	0    1    1    0   
 $EndComp
-Text HLabel 6650 2950 2    60   Input ~ 0
-3V3
+Wire Wire Line
+	6700 4800 6850 4800
+$Comp
+L R R?
+U 1 1 565A07C5
+P 7000 4950
+F 0 "R?" V 7080 4950 50  0000 C CNN
+F 1 "NOPE" V 7000 4950 50  0000 C CNN
+F 2 "" V 6930 4950 30  0000 C CNN
+F 3 "" H 7000 4950 30  0000 C CNN
+	1    7000 4950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6700 4950 6850 4950
+Wire Wire Line
+	7150 4800 7300 4800
+Wire Wire Line
+	7300 4800 7300 5100
+Wire Wire Line
+	7300 4950 7150 4950
+$Comp
+L GND #PWR?
+U 1 1 565A0941
+P 7300 5100
+F 0 "#PWR?" H 7300 4850 50  0001 C CNN
+F 1 "GND" H 7300 4950 50  0000 C CNN
+F 2 "" H 7300 5100 60  0000 C CNN
+F 3 "" H 7300 5100 60  0000 C CNN
+	1    7300 5100
+	1    0    0    -1  
+$EndComp
+Connection ~ 7300 4950
+$Comp
+L R R?
+U 1 1 565A0AC7
+P 7000 4500
+F 0 "R?" V 7080 4500 50  0000 C CNN
+F 1 "0Ω" V 7000 4500 50  0000 C CNN
+F 2 "" V 6930 4500 30  0000 C CNN
+F 3 "" H 7000 4500 30  0000 C CNN
+	1    7000 4500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6700 4500 6850 4500
+$Comp
+L R R?
+U 1 1 565A0ACE
+P 7000 4650
+F 0 "R?" V 7080 4650 50  0000 C CNN
+F 1 "0Ω" V 7000 4650 50  0000 C CNN
+F 2 "" V 6930 4650 30  0000 C CNN
+F 3 "" H 7000 4650 30  0000 C CNN
+	1    7000 4650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6700 4650 6850 4650
 $EndSCHEMATC

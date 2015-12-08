@@ -34,7 +34,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 2
+Sheet 2 3
 Title ""
 Date ""
 Rev ""
@@ -57,10 +57,10 @@ F 4 "http://parts.io/detail/1370896/MCP1700T-3302E%2FTT" H 5350 3150 60  0001 C 
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C3
+L C C?
 U 1 1 5657EDC1
 P 6400 3250
-F 0 "C3" H 6425 3350 50  0000 L CNN
+F 0 "C?" H 6425 3350 50  0000 L CNN
 F 1 "10μF" H 6425 3150 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0805" H 6438 3100 30  0001 C CNN
 F 3 "" H 6400 3250 60  0000 C CNN
@@ -68,10 +68,10 @@ F 3 "" H 6400 3250 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C1
+L C C?
 U 1 1 5657EDC8
 P 4500 3300
-F 0 "C1" H 4525 3400 50  0000 L CNN
+F 0 "C?" H 4525 3400 50  0000 L CNN
 F 1 "10μF" H 4525 3200 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0805" H 4538 3150 30  0001 C CNN
 F 3 "" H 4500 3300 60  0000 C CNN
@@ -195,7 +195,7 @@ F 3 "" H 4100 4150 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 Text HLabel 6650 2950 2    60   Input ~ 0
-3V3
+PWR
 $Comp
 L C C?
 U 1 1 5659E1E5
@@ -323,7 +323,7 @@ Wire Wire Line
 Wire Wire Line
 	6400 3800 6400 3400
 Wire Wire Line
-	4500 3800 6400 3800
+	4500 3800 6700 3800
 Wire Wire Line
 	5350 3600 5350 3800
 Connection ~ 5350 3800
@@ -540,4 +540,7 @@ F 3 "" H 7000 4650 30  0000 C CNN
 $EndComp
 Wire Wire Line
 	6700 4650 6850 4650
+Text HLabel 6700 3800 2    60   Input ~ 0
+GND
+Connection ~ 6400 3800
 $EndSCHEMATC

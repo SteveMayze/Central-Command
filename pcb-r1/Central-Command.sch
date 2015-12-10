@@ -110,8 +110,6 @@ F 3 "" H 2800 3300 60  0000 C CNN
 	1    2800 3300
 	1    0    0    -1  
 $EndComp
-Text GLabel 2500 900  0    60   Input ~ 0
-3V3
 Text Notes 4500 1250 0    60   ~ 0
 TODO: Get crystal/oscillator
 $Comp
@@ -365,7 +363,7 @@ Wire Wire Line
 	3550 3250 3550 3150
 Connection ~ 2900 3250
 Wire Wire Line
-	2500 900  2900 900 
+	2250 900  2900 900 
 Wire Wire Line
 	2900 800  2900 1000
 Wire Wire Line
@@ -653,4 +651,6 @@ Wire Wire Line
 	9000 4750 9450 4750
 Wire Wire Line
 	9450 4750 9450 5050
+Text Label 2250 900  0    60   ~ 0
+PWR
 $EndSCHEMATC

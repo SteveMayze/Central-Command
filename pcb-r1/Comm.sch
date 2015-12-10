@@ -406,4 +406,6 @@ Wire Notes Line
 	3150 7550 1250 7550
 Wire Notes Line
 	1250 7550 1250 5850
+Text Label 3500 1150 0    60   ~ 0
+PWR
 $EndSCHEMATC

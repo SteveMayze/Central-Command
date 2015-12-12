@@ -56,17 +56,6 @@ F 3 "" H 1950 6450 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SW_PUSH SW201
-U 1 1 56673C7E
-P 2350 6600
-F 0 "SW201" H 2500 6710 50  0000 C CNN
-F 1 "SW_PUSH" H 2350 6520 50  0000 C CNN
-F 2 "CentralCommand:PTS525SM15SMTR2LFS" H 2350 6600 60  0001 C CNN
-F 3 "" H 2350 6600 60  0000 C CNN
-	1    2350 6600
-	0    1    1    0   
-$EndComp
-$Comp
 L GND #PWR06
 U 1 1 56673C8A
 P 2350 7200
@@ -77,7 +66,7 @@ F 3 "" H 2350 7200 60  0000 C CNN
 	1    2350 7200
 	1    0    0    -1  
 $EndComp
-Text Notes 2450 6350 0    60   ~ 0
+Text Notes 2600 6350 0    60   ~ 0
 Reset Button
 Text Label 1400 6100 0    60   ~ 0
 NRST
@@ -169,6 +158,9 @@ F 0 "P202" H 4900 1450 50  0000 C CNN
 F 1 "CONN_01X04" V 5000 1200 50  0001 C CNN
 F 2 "CentralCommand:Grove-2mm" H 4900 1200 60  0001 C CNN
 F 3 "" H 4900 1200 60  0000 C CNN
+F 4 "Value" H 4900 1200 60  0001 C CNN "MPN"
+F 5 "Value" H 4900 1200 60  0001 C CNN "ConradPN"
+F 6 "SPI Input" H 5200 1200 60  0000 C CNN "Label"
 	1    4900 1200
 	1    0    0    -1  
 $EndComp
@@ -180,7 +172,7 @@ Wire Wire Line
 	1950 6100 1950 6300
 Connection ~ 1950 6100
 Wire Wire Line
-	2350 6900 2350 7200
+	2350 6800 2350 7200
 Wire Wire Line
 	1950 6600 1950 7050
 Wire Wire Line
@@ -258,29 +250,20 @@ F 0 "P203" H 4900 2200 50  0000 C CNN
 F 1 "CONN_01X04" V 5000 1950 50  0001 C CNN
 F 2 "CentralCommand:Grove-2mm" H 4900 1950 60  0001 C CNN
 F 3 "" H 4900 1950 60  0000 C CNN
+F 4 "Value" H 4900 1950 60  0001 C CNN "MPN"
+F 5 "Value" H 4900 1950 60  0001 C CNN "ConradPN"
+F 6 "SPI Input" H 5200 1950 60  0000 C CNN "Label"
 	1    4900 1950
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4500 1050 4500 1800
-Wire Wire Line
 	4500 1800 4700 1800
-Connection ~ 4500 1050
-Wire Wire Line
-	4450 1150 4450 1900
 Wire Wire Line
 	4450 1900 4700 1900
-Connection ~ 4450 1150
-Wire Wire Line
-	4400 1250 4400 2000
 Wire Wire Line
 	4400 2000 4700 2000
-Connection ~ 4400 1250
-Wire Wire Line
-	4350 1350 4350 2100
 Wire Wire Line
 	4350 2100 4700 2100
-Connection ~ 4350 1350
 Text Notes 5200 1600 0    60   ~ 0
 Seed Studio \nGrove Connectors (2mm)
 $Comp
@@ -408,4 +391,37 @@ Wire Notes Line
 	1250 7550 1250 5850
 Text Label 3500 1150 0    60   ~ 0
 PWR
+$Comp
+L TL3315NF160Q SW201
+U 1 1 566C72BD
+P 2450 6550
+F 0 "SW201" H 2725 6425 60  0000 C CNN
+F 1 "TL3315NF160Q" H 2950 6550 60  0001 C CNN
+F 2 "CentralCommand:PTS525SM15SMTR2LFS" H 2450 6500 60  0001 C CNN
+F 3 "" H 2450 6500 60  0000 C CNN
+	1    2450 6550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 6900 2550 6900
+Wire Wire Line
+	2550 6900 2550 6800
+Connection ~ 2350 6900
+Wire Wire Line
+	2350 6200 2550 6200
+Wire Wire Line
+	2550 6200 2550 6300
+Connection ~ 2350 6200
+Wire Wire Line
+	4500 1800 4500 1350
+Connection ~ 4500 1350
+Wire Wire Line
+	4450 1900 4450 1250
+Connection ~ 4450 1250
+Wire Wire Line
+	4400 2000 4400 1150
+Connection ~ 4400 1150
+Wire Wire Line
+	4350 2100 4350 1050
+Connection ~ 4350 1050
 $EndSCHEMATC

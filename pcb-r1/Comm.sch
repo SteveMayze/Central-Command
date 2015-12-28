@@ -160,7 +160,7 @@ F 2 "CentralCommand:Grove-2mm" H 4900 1200 60  0001 C CNN
 F 3 "" H 4900 1200 60  0000 C CNN
 F 4 "Value" H 4900 1200 60  0001 C CNN "MPN"
 F 5 "Value" H 4900 1200 60  0001 C CNN "ConradPN"
-F 6 "SPI Output" H 5200 1200 60  0000 C CNN "Label"
+F 6 "SPI Input" H 5200 1200 60  0000 C CNN "Label"
 	1    4900 1200
 	1    0    0    -1  
 $EndComp
@@ -250,7 +250,7 @@ F 2 "CentralCommand:Grove-2mm" H 4900 1950 60  0001 C CNN
 F 3 "" H 4900 1950 60  0000 C CNN
 F 4 "Value" H 4900 1950 60  0001 C CNN "MPN"
 F 5 "Value" H 4900 1950 60  0001 C CNN "ConradPN"
-F 6 "SPI Input" H 5200 1950 60  0000 C CNN "Label"
+F 6 "SPI Output" H 5200 1950 60  0000 C CNN "Label"
 	1    4900 1950
 	1    0    0    -1  
 $EndComp
@@ -298,51 +298,6 @@ Wire Wire Line
 	5850 3350 5850 3550
 Text HLabel 5400 3250 0    60   Input ~ 0
 BOOT0
-$Comp
-L CONN_01X02 P205
-U 1 1 56674C8F
-P 8700 3250
-F 0 "P205" H 8700 3400 50  0000 C CNN
-F 1 "CONN_01X02" V 8800 3250 50  0001 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 8700 3250 60  0001 C CNN
-F 3 "" H 8700 3250 60  0000 C CNN
-	1    8700 3250
-	-1   0    0    -1  
-$EndComp
-$Comp
-L R R205
-U 1 1 56674D50
-P 9350 3200
-F 0 "R205" V 9430 3200 50  0000 C CNN
-F 1 "R" V 9350 3200 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 9280 3200 30  0001 C CNN
-F 3 "" H 9350 3200 30  0000 C CNN
-	1    9350 3200
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	9500 3200 9950 3200
-Text HLabel 9950 3200 2    60   Input ~ 0
-MCO
-Wire Wire Line
-	8900 3200 9200 3200
-$Comp
-L GND #PWR010
-U 1 1 56674E8A
-P 9000 3500
-F 0 "#PWR010" H 9000 3250 50  0001 C CNN
-F 1 "GND" H 9000 3350 50  0000 C CNN
-F 2 "" H 9000 3500 60  0000 C CNN
-F 3 "" H 9000 3500 60  0000 C CNN
-	1    9000 3500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8900 3300 9000 3300
-Wire Wire Line
-	9000 3300 9000 3500
-Text Notes 9100 2950 0    60   ~ 0
-Clock Header
 Text Notes 6500 3250 0    60   ~ 0
 Boot Header
 Wire Notes Line
@@ -369,16 +324,6 @@ Wire Notes Line
 	7300 4000 4850 4000
 Wire Notes Line
 	4850 4000 4850 2850
-Wire Notes Line
-	8350 2750 8350 3900
-Wire Notes Line
-	8350 3900 10450 3900
-Wire Notes Line
-	10450 3900 10450 2650
-Wire Notes Line
-	10450 2650 8350 2650
-Wire Notes Line
-	8350 2650 8350 2800
 Wire Notes Line
 	1250 5850 3150 5850
 Wire Notes Line

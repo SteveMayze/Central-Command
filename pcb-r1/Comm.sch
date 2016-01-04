@@ -160,7 +160,7 @@ F 2 "CentralCommand:Grove-2mm" H 4900 1200 60  0001 C CNN
 F 3 "" H 4900 1200 60  0000 C CNN
 F 4 "Value" H 4900 1200 60  0001 C CNN "MPN"
 F 5 "Value" H 4900 1200 60  0001 C CNN "ConradPN"
-F 6 "SPI Input" H 5200 1200 60  0000 C CNN "Label"
+F 6 "SPI Output" H 5200 1200 60  0000 C CNN "Label"
 	1    4900 1200
 	1    0    0    -1  
 $EndComp
@@ -250,7 +250,7 @@ F 2 "CentralCommand:Grove-2mm" H 4900 1950 60  0001 C CNN
 F 3 "" H 4900 1950 60  0000 C CNN
 F 4 "Value" H 4900 1950 60  0001 C CNN "MPN"
 F 5 "Value" H 4900 1950 60  0001 C CNN "ConradPN"
-F 6 "SPI Output" H 5200 1950 60  0000 C CNN "Label"
+F 6 "SPI Input" H 5200 1950 60  0000 C CNN "Label"
 	1    4900 1950
 	1    0    0    -1  
 $EndComp

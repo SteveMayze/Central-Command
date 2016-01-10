@@ -121,6 +121,7 @@ F 1 "Crystal" H 4650 1600 50  0000 C CNN
 F 2 "Crystals:Crystal_HC49-U_Vertical" H 4650 1750 60  0001 C CNN
 F 3 "" H 4650 1750 60  0000 C CNN
 F 4 "http://parts.io/detail/343558/FOXSLF%2F080-20" H 4650 1750 60  0001 C CNN "Link"
+F 5 "FOXSLF/080-20" H 4650 1750 60  0001 C CNN "MPN"
 	1    4650 1750
 	0    1    1    0   
 $EndComp

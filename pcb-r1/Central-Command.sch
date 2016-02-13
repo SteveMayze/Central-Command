@@ -368,9 +368,9 @@ Text Label 5750 5900 2    60   ~ 0
 I2C1_SCK
 Text Notes 5750 5550 2    60   ~ 0
 Sensor I2C Header
-Text Label 7600 5650 0    60   ~ 0
-USART2_TX
 Text Label 7600 5850 0    60   ~ 0
+USART2_TX
+Text Label 7600 5650 0    60   ~ 0
 USART2_RX
 $Comp
 L GND #PWR04

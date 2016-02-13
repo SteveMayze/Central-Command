@@ -150,10 +150,12 @@ F 0 "L301" H 3800 4600 50  0000 C CNN
 F 1 "FERRITE" H 3800 4450 50  0000 C CNN
 F 2 "Inductors_NEOSID:Neosid_Inductor_SM1206" H 3800 4500 60  0001 C CNN
 F 3 "" H 3800 4500 60  0000 C CNN
-F 4 "742792605" H 3800 4500 60  0001 C CNN "MPN"
-F 5 "Value" H 3800 4500 60  0001 C CNN "ConradPN"
-F 6 "Value" H 3800 4500 60  0000 C CNN "Label"
-F 7 "732-4661-1-ND" H 3800 4500 60  0001 C CNN "DigiKeyPN"
+F 4 "732-4661-1-ND" H 3800 4500 60  0001 C CNN "DigiKeyPN"
+F 5 "Value" H 3800 4500 60  0001 C CNN "Voltage"
+F 6 "Value" H 3800 4500 60  0001 C CNN "ConradPN"
+F 7 "Value" H 3800 4500 60  0001 C CNN "Link"
+F 8 "742792605" H 3800 4500 60  0001 C CNN "MPN"
+F 9 "Value" H 3800 4500 60  0000 C CNN "Label"
 	1    3800 4500
 	1    0    0    -1  
 $EndComp
@@ -588,4 +590,6 @@ NoConn ~ 6700 6150
 NoConn ~ 6700 6300
 NoConn ~ 5200 6250
 NoConn ~ 5200 6100
+Text Notes 1250 6300 0    60   ~ 0
+The Ferrite bead ordered was the wrong type i.e. 0603. \nThe pads are meant for 12.06. A better fit would be \nBLM31PG330SN1L 490-5989-1-ND
 $EndSCHEMATC

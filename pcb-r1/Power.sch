@@ -58,7 +58,7 @@ F 6 "Value" H 6050 3150 60  0000 C CNN "Label"
 F 7 "http://parts.io/detail/1370896/MCP1700T-3302E%2FTT" H 6050 3150 60  0001 C CNN "link"
 F 8 "MCP1700T3302ETTCT-ND" H 6050 3150 60  0001 C CNN "DigiKeyPN"
 	1    6050 3150
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L C C306
@@ -69,7 +69,7 @@ F 1 "10μF" H 7125 3150 50  0000 L CNN
 F 2 "Capacitors_SMD:C_1210" H 7138 3100 30  0001 C CNN
 F 3 "" H 7100 3250 60  0000 C CNN
 	1    7100 3250
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L C C305
@@ -81,7 +81,7 @@ F 2 "Capacitors_SMD:C_1210" H 5238 3150 30  0001 C CNN
 F 3 "" H 5200 3300 60  0000 C CNN
 F 4 "1276-2865-1-ND" H 5200 3300 60  0001 C CNN "DigiKeyPN"
 	1    5200 3300
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L GND #PWR010
@@ -92,7 +92,7 @@ F 1 "GND" H 5800 3900 50  0000 C CNN
 F 2 "" H 5800 4050 60  0000 C CNN
 F 3 "" H 5800 4050 60  0000 C CNN
 	1    5800 4050
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L CONN_01X02 P302
@@ -103,7 +103,7 @@ F 1 "ALT PWR" H 3300 2800 50  0000 C CNN
 F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 3300 3000 60  0001 C CNN
 F 3 "" H 3300 3000 60  0000 C CNN
 	1    3300 3000
-	-1   0    0    -1  
+	-1   0    0    -1
 $EndComp
 $Comp
 L GND #PWR011
@@ -114,7 +114,7 @@ F 1 "GND" H 3600 3200 50  0000 C CNN
 F 2 "" H 3600 3350 60  0000 C CNN
 F 3 "" H 3600 3350 60  0000 C CNN
 	1    3600 3350
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L FT232RQ U301
@@ -129,7 +129,7 @@ F 5 "Value" H 5950 5400 60  0001 C CNN "ConradPN"
 F 6 "Value" H 5950 5400 60  0000 C CNN "Label"
 F 7 "768-1008-1-ND" H 5950 5400 60  0001 C CNN "DigiKeyPN"
 	1    5950 5400
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L USB-MICRO-B P301
@@ -140,7 +140,7 @@ F 1 "USB-MICRO-B" H 2500 4350 50  0000 C CNN
 F 2 "CentralCommand:USB_Micro_B" H 2650 4600 50  0001 C CNN
 F 3 "" H 2650 4600 50  0000 C CNN
 	1    2650 4700
-	-1   0    0    -1  
+	-1   0    0    -1
 $EndComp
 $Comp
 L INDUCTOR_SMALL L301
@@ -150,14 +150,14 @@ F 0 "L301" H 3800 4600 50  0000 C CNN
 F 1 "FERRITE" H 3800 4450 50  0000 C CNN
 F 2 "Inductors_NEOSID:Neosid_Inductor_SM1206" H 3800 4500 60  0001 C CNN
 F 3 "" H 3800 4500 60  0000 C CNN
-F 4 "732-4661-1-ND" H 3800 4500 60  0001 C CNN "DigiKeyPN"
-F 5 "Value" H 3800 4500 60  0001 C CNN "Voltage"
-F 6 "Value" H 3800 4500 60  0001 C CNN "ConradPN"
-F 7 "Value" H 3800 4500 60  0001 C CNN "Link"
-F 8 "742792605" H 3800 4500 60  0001 C CNN "MPN"
-F 9 "Value" H 3800 4500 60  0000 C CNN "Label"
+F 4 "BLM31PG330SN1L" H 3800 4500 60  0001 C CNN "MPN"
+F 5 "Value" H 3800 4500 60  0001 C CNN "ConradPN"
+F 6 "Value" H 3800 4500 60  0000 C CNN "Label"
+F 7 "490-5989-1-ND" H 3800 4500 60  0001 C CNN "DigiKeyPN"
+F 8 "Value" H 3800 4500 60  0001 C CNN "Voltage"
+F 9 "Value" H 3800 4500 60  0001 C CNN "Link"
 	1    3800 4500
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L C C301
@@ -168,7 +168,7 @@ F 1 "0.1μF" H 3475 5100 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0805" H 3488 5050 30  0001 C CNN
 F 3 "" H 3450 5200 60  0000 C CNN
 	1    3450 5200
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L GND #PWR012
@@ -179,7 +179,7 @@ F 1 "GND" H 3200 5450 50  0000 C CNN
 F 2 "" H 3200 5600 60  0000 C CNN
 F 3 "" H 3200 5600 60  0000 C CNN
 	1    3200 5600
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Text HLabel 7600 4500 2    60   Input ~ 0
 TXD
@@ -200,7 +200,7 @@ F 5 "Value" H 3800 2950 60  0001 C CNN "ConradPN"
 F 6 "Value" H 3800 2950 60  0000 C CNN "Label"
 F 7 "B130-FDICT-ND" H 3800 2950 60  0001 C CNN "DigiKeyPN"
 	1    3800 2950
-	-1   0    0    1   
+	-1   0    0    1
 $EndComp
 $Comp
 L D_Schottky D302
@@ -215,7 +215,7 @@ F 5 "Value" H 4100 4150 60  0001 C CNN "ConradPN"
 F 6 "Value" H 4100 4150 60  0000 C CNN "Label"
 F 7 "B130-FDICT-ND" H 4100 4150 60  0001 C CNN "DigiKeyPN"
 	1    4100 4150
-	0    1    1    0   
+	0    1    1    0
 $EndComp
 Text HLabel 7350 2950 2    60   Input ~ 0
 PWR
@@ -229,7 +229,7 @@ F 2 "Capacitors_SMD:C_0805" H 4088 6500 30  0001 C CNN
 F 3 "" H 4050 6650 60  0000 C CNN
 F 4 "478-1395-1-ND" H 4050 6650 60  0001 C CNN "DigiKeyPN"
 	1    4050 6650
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L C C303
@@ -241,7 +241,7 @@ F 2 "Capacitors_SMD:C_0805" H 4438 6500 30  0001 C CNN
 F 3 "" H 4400 6650 60  0000 C CNN
 F 4 "1276-1856-1-ND" H 4400 6650 60  0001 C CNN "DigiKeyPN"
 	1    4400 6650
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L GND #PWR013
@@ -252,7 +252,7 @@ F 1 "GND" H 4250 7100 50  0000 C CNN
 F 2 "" H 4250 7250 60  0000 C CNN
 F 3 "" H 4250 7250 60  0000 C CNN
 	1    4250 7250
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L C C304
@@ -264,7 +264,7 @@ F 2 "Capacitors_SMD:C_0805" H 4938 6500 30  0001 C CNN
 F 3 "" H 4900 6650 60  0000 C CNN
 F 4 "478-1395-1-ND" H 4900 6650 60  0001 C CNN "DigiKeyPN"
 	1    4900 6650
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L R R301
@@ -275,7 +275,7 @@ F 1 "0Ω" V 4950 5800 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805" V 4880 5800 30  0001 C CNN
 F 3 "" H 4950 5800 30  0000 C CNN
 	1    4950 5800
-	0    1    1    0   
+	0    1    1    0
 $EndComp
 $Comp
 L GND #PWR014
@@ -286,7 +286,7 @@ F 1 "GND" H 5500 6900 50  0000 C CNN
 F 2 "" H 5500 7050 60  0000 C CNN
 F 3 "" H 5500 7050 60  0000 C CNN
 	1    5500 7050
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Text Notes 7400 3300 0    60   ~ 0
 Chris changed this from \n1uF to 10uF
@@ -299,7 +299,7 @@ F 1 "270Ω" V 8200 4900 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805" V 8130 4900 30  0001 C CNN
 F 3 "" H 8200 4900 30  0000 C CNN
 	1    8200 4900
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L LED D303
@@ -310,7 +310,7 @@ F 1 "Tx LED" H 8200 5300 50  0000 C CNN
 F 2 "LEDs:LED-0805" H 8200 5400 60  0001 C CNN
 F 3 "" H 8200 5400 60  0000 C CNN
 	1    8200 5400
-	0    -1   -1   0   
+	0    -1   -1   0
 $EndComp
 $Comp
 L R R307
@@ -321,7 +321,7 @@ F 1 "270Ω" V 8650 4900 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805" V 8580 4900 30  0001 C CNN
 F 3 "" H 8650 4900 30  0000 C CNN
 	1    8650 4900
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L LED D304
@@ -332,7 +332,7 @@ F 1 "Rx LED" H 8650 5300 50  0000 C CNN
 F 2 "LEDs:LED-0805" H 8650 5400 60  0001 C CNN
 F 3 "" H 8650 5400 60  0000 C CNN
 	1    8650 5400
-	0    -1   -1   0   
+	0    -1   -1   0
 $EndComp
 Wire Wire Line
 	6800 2950 7350 2950
@@ -487,7 +487,7 @@ F 1 "NOPE" V 7000 4800 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805" V 6930 4800 30  0001 C CNN
 F 3 "" H 7000 4800 30  0000 C CNN
 	1    7000 4800
-	0    1    1    0   
+	0    1    1    0
 $EndComp
 Wire Wire Line
 	6700 4800 6850 4800
@@ -500,7 +500,7 @@ F 1 "NOPE" V 7000 4950 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805" V 6930 4950 30  0001 C CNN
 F 3 "" H 7000 4950 30  0000 C CNN
 	1    7000 4950
-	0    1    1    0   
+	0    1    1    0
 $EndComp
 Wire Wire Line
 	6700 4950 6850 4950
@@ -519,7 +519,7 @@ F 1 "GND" H 7300 4950 50  0000 C CNN
 F 2 "" H 7300 5100 60  0000 C CNN
 F 3 "" H 7300 5100 60  0000 C CNN
 	1    7300 5100
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Connection ~ 7300 4950
 $Comp
@@ -531,7 +531,7 @@ F 1 "0Ω" V 7000 4500 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805" V 6930 4500 30  0001 C CNN
 F 3 "" H 7000 4500 30  0000 C CNN
 	1    7000 4500
-	0    1    1    0   
+	0    1    1    0
 $EndComp
 Wire Wire Line
 	6700 4500 6850 4500
@@ -544,7 +544,7 @@ F 1 "0Ω" V 7000 4650 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805" V 6930 4650 30  0001 C CNN
 F 3 "" H 7000 4650 30  0000 C CNN
 	1    7000 4650
-	0    1    1    0   
+	0    1    1    0
 $EndComp
 Wire Wire Line
 	6700 4650 6850 4650
